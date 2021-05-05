@@ -115,12 +115,28 @@ Furthermore we observe that the gait signal is significantly more noisy on all v
 
 \section{Pathological Gait : Toe Walking}
 
+We try to reproduce a pathological gait that displays toe-walking. To get to such a gait we propose an alteration to the OpenSim model to emulate plantarflexor muscle contracture (as proposed by Ong et al. \cite{1}). We implement severe PF contracture by reducing the optimal fiber length of left and right \textit{soleus} an \textit{gastrocnemius} muscles by a factor of $0.7$. After running the optimization process we observe that the solution indeed converges to a toe-walking gait that is quite similar to the one observed when modeling hyperreflexia. The resulting gait is less noisy than the one obtained by modeling hyperreflexia (figure \ref{toe_gait}), but the gait is quite irregular (it differs from one cycle to another). The knee flexion amplitude is also lower than in the hyperreflexia example.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{screens/toe_walk_gait.png}
-    \caption{Gait parameters as observed in the SCONE simulation of a subject with a gait affected by hyperreflexia. We observe that the signal is more noisy, and has a higher amplitude on every variable. }
+    \caption{Gait parameters as observed in the SCONE simulation of a subject with a gait affected by severe PF contracture.}
     \label{toe_gait}
 \end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{screens/toe_render.jpg}
+    \caption{Rendering of the optimization solution produced for the toe-walking model (subject affected with severe PF contracture).}
+    \label{toe_render}
+\end{figure}
+
+
+\begin{thebibliography}{1}
+
+    \bibitem{Ong} Ong CF., Geijtenbeek T., Hicks JL., Delp SL., "\textit{Predicting gait adaptations due to ankle plantarflexor muscle weakness and contracture using physics-based musculoskeletal simulations}" \emph{PLoS Computational Biology 15}, 2019.
+\end{thebibliography}
+
 
 \end{document}
 
