@@ -225,8 +225,8 @@ INPUT /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/s
 INPUT /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.aux
 INPUT /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.run.xml
 OUTPUT /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.run.xml
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb

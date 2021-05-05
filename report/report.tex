@@ -93,6 +93,8 @@ The resulting gait displays a \textit{heel-walking} behavior as is clearly visib
     \label{atrophic_render}
 \end{figure}
 
+Compared with the healthy biomechanics model, it takes much longer for the muscle-atrophied model to converge to a stable gait ($\sim 80$ iterations instead of $\sim 10$ iterations) it also converges to a higher cost ($0.797$ is the best score we obtained for the healthy gait, when modeling muscle atrophy we only converge to $0.989$, where cost is a metric that estimates metabolic cost of walking and penalizes falling, injury). It appears the muscle atrophy gait is necessarily less energy efficient than the healthy gait.
+
 \section{Pathological Gait : Hyperreflexia}
 
 We increase the gain of velocity dependent reflexes for both plantarflexor muscles in the model controller and run the optimization process until we find a stable gait. We clearly see that the principal kinematic adaptation is that the model adopts a \textit{toe-walking} gait. This can be observed in the ankle flexion plot  from the gait analysis (figure \ref{hr_gait}) which adopts a constant negative value (the heel is almost never flat on the ground) or in the renders (figure \ref{hr_render}) that clearly show that the body supports itself on the toe alone for the entire support phase. The knee flexion amplitude is also increased. The pelvic tilt also displays a higher average value than for both previous gaits (which actually makes it more in line with average, healthy human walking).
@@ -113,6 +115,8 @@ Furthermore we observe that the gait signal is significantly more noisy on all v
     \label{hr_render}
 \end{figure}
 
+Perhaps surprisingly, the hyperreflexia model converges to a stable gait about as fast as the healthy model ($\sim 12$ iterations for the hyperreflexia model v.s. $\sim 10$ iterations for the healthy model), but the cost function converges to a higher value ($1.673$ for hyperreflexia compared with $0.797$ for the healthy gait). The fast convergence might be attributed to the highly noisy dynamics that are associated with a higher feedback gain (the optimization algorithm might get out of local minima faster). The higher final cost is probably also attributed to instability (cost function penalizes head movement, falls and high energy use, which are all associated with noisy muscle activation).
+
 \section{Pathological Gait : Toe Walking}
 
 We try to reproduce a pathological gait that displays toe-walking. To get to such a gait we propose an alteration to the OpenSim model to emulate plantarflexor muscle contracture (as proposed by Ong et al. \cite{1}). We implement severe PF contracture by reducing the optimal fiber length of left and right \textit{soleus} an \textit{gastrocnemius} muscles by a factor of $0.7$. After running the optimization process we observe that the solution indeed converges to a toe-walking gait that is quite similar to the one observed when modeling hyperreflexia. The resulting gait is less noisy than the one obtained by modeling hyperreflexia (figure \ref{toe_gait}), but the gait is quite irregular (it differs from one cycle to another). The knee flexion amplitude is also lower than in the hyperreflexia example.
@@ -124,12 +128,16 @@ We try to reproduce a pathological gait that displays toe-walking. To get to suc
     \label{toe_gait}
 \end{figure}
 
+The biomechanical intuition behind the emergence of toe-walking when modeling severe PF contracture is actually quite simple : shortening the plantarflexor muscles means that the rest position of the ankle is no longer flat on the ground. Therefore the most energy efficient walking cycle becomes one where ankles are flexed in the direction of plantarflexion, i.e. toe-walking.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{screens/toe_render.jpg}
     \caption{Rendering of the optimization solution produced for the toe-walking model (subject affected with severe PF contracture).}
     \label{toe_render}
 \end{figure}
+
+The PF contracture model converges fast to a stable gait ($\sim 10$ iterations, about the same as the healthy model) but the terminal cost is really high ($1.182$ which is lower than the hyperreflexia solution but higher than the muscle atrophy solution). This is most likely explained by the same factors as in the hyperreflexia example : irregular walking, muscle activation higher on average.
 
 
 \begin{thebibliography}{1}

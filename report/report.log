@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.11)  5 MAY 2021 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.11)  5 MAY 2021 16:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -736,38 +736,33 @@ File: screens/heel_walk.jpg Graphic file (type jpg)
 <use screens/heel_walk.jpg>
 Package pdftex.def Info: screens/heel_walk.jpg  used on input line 91.
 (pdftex.def)             Requested size: 452.9679pt x 108.71275pt.
-<screens/hyperreflexia_gait.png, id=18, 1736.4875pt x 643.40375pt>
+ [2 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/atrophy_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/heel_walk.jpg>]
+<screens/hyperreflexia_gait.png, id=24, 1736.4875pt x 643.40375pt>
 File: screens/hyperreflexia_gait.png Graphic file (type png)
 <use screens/hyperreflexia_gait.png>
-Package pdftex.def Info: screens/hyperreflexia_gait.png  used on input line 102.
+Package pdftex.def Info: screens/hyperreflexia_gait.png  used on input line 104.
 (pdftex.def)             Requested size: 452.9679pt x 167.83081pt.
- [2 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/atrophy_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/heel_walk.jpg>]
-<screens/toe_walk_hr.jpg, id=24, 2509.375pt x 602.25pt>
+<screens/toe_walk_hr.jpg, id=25, 2509.375pt x 602.25pt>
 File: screens/toe_walk_hr.jpg Graphic file (type jpg)
 <use screens/toe_walk_hr.jpg>
-Package pdftex.def Info: screens/toe_walk_hr.jpg  used on input line 111.
+Package pdftex.def Info: screens/toe_walk_hr.jpg  used on input line 113.
 (pdftex.def)             Requested size: 452.9679pt x 108.71275pt.
 
 
-LaTeX Warning: Citation '1' on page 3 undefined on input line 118.
+LaTeX Warning: Citation '1' on page 3 undefined on input line 122.
 
-<screens/toe_walk_gait.png, id=25, 1756.5625pt x 626.34pt>
+[3 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/hyperreflexia_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_hr.jpg>]
+<screens/toe_walk_gait.png, id=30, 1756.5625pt x 626.34pt>
 File: screens/toe_walk_gait.png Graphic file (type png)
 <use screens/toe_walk_gait.png>
-Package pdftex.def Info: screens/toe_walk_gait.png  used on input line 122.
+Package pdftex.def Info: screens/toe_walk_gait.png  used on input line 126.
 (pdftex.def)             Requested size: 452.9679pt x 161.5161pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<screens/toe_render.jpg, id=26, 2509.375pt x 602.25pt>
+<screens/toe_render.jpg, id=31, 2509.375pt x 602.25pt>
 File: screens/toe_render.jpg Graphic file (type jpg)
 <use screens/toe_render.jpg>
-Package pdftex.def Info: screens/toe_render.jpg  used on input line 129.
+Package pdftex.def Info: screens/toe_render.jpg  used on input line 135.
 (pdftex.def)             Requested size: 452.9679pt x 108.71275pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/hyperreflexia_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_hr.jpg>] [4 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_render.jpg>] (/Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.aux)
+ [4 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_render.jpg>] [5] (/Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -788,11 +783,11 @@ Here is how much of TeX's memory you used:
  571939 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,45p,1204b,1132s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.pdf (4 pages, 5846335 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.pdf (5 pages, 5848816 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
