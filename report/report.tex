@@ -57,25 +57,25 @@
 
 \section{Healthy Gait}
 
-The solution provided by the optimization process (which converges relatively fast) is quite good. The gait appears natural when played as a video but a close examination of the gait parameters (pelvic tilt, hip, knee and ankle flexion as well as ground reaction forces, displayed in figure \ref{healthy_gait}) show that the model gives results slightly off compared to measured data in humans. The curves have the approximate shape of the real-life data but their amplitude and timing is slightly off. Furthermore one observes that the ankle flexion displays a dip in angle at $\sim 25\%$ of the gait cycle that simply doesn't exist in humans. This model seems more useful as a toy-model, to rapidly test out hypotheses rather than as an accurate prediction tool (as is often the case when modeling complex dynamical systems).
+The solution provided by the optimization process (which converges relatively fast) is quite good. The gait appears natural when played as a video but a close examination of the gait parameters (pelvic tilt, hip, knee and ankle flexion as well as ground reaction forces, displayed in figure \ref{healthy_gait}) show that the model gives results slightly off compared to measured data in humans. The curves have the approximate shape of the real-life data but their amplitude and timing is slightly off. Furthermore one observes that the ankle flexion displays a dip in angle at $\sim 25\%$ of the gait cycle that simply doesn't exist in humans. This model seems more useful as a toy-model, to rapidly test out hypotheses rather than as an accurate prediction tool (as is often the case when modeling complex dynamical systems). The render allows for the observation of gait kinematics as displayed in figure \ref{healthy_render}.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{screens/healthy_gait.png}
+    \includegraphics[width=0.9\textwidth]{screens/healthy_gait.png}
     \caption{Gait parameters as observed in the SCONE simulation of the gait of a healthy subject. The grayed-out area show distribution of gait parameters in healthy humans, the colored lines show the gait parameter evolution over multiple gait cycle for our optimal solution.}
     \label{healthy_gait}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.4\textwidth]{screens/healthy_walk.jpg}
-    \caption{Rendering of the optimization solution produced by the healthy model and controller.}
+    \includegraphics[width=\textwidth]{screens/healthy_render.jpg}
+    \caption{Rendering of the optimization solution produced by the healthy model and controller. The stills are presented in chronological order from left to right. T red line denotes a reference point in space between the different stills. One can clearly observe heel contact (on the leftmost still), a foot-flat phase (on the two centered stills) and then toe-off (on the rightmost still).}
     \label{healthy_render}
 \end{figure}
 
 \section{Pathological Gait : Plantarflexor Muscle Atrophy}
 
-We reduce the maximum force that can be produced by the plantarflexor muscles (\textit{gastrocnemius} and \textit{soleus}). The principal kinetic adaptation is (quite obviously) a reduction of the amplitude of plantarflexion as is clearly visible on 
+We reduce the maximum force that can be produced by the plantarflexor muscles (\textit{gastrocnemius} and \textit{soleus}). The principal kinetic adaptation is (quite obviously) a reduction of the amplitude of plantarflexion as is clearly visible on the ankle figure plot of the gait analysis in figure \ref{atrophic_gait}. A more general observation is that the gait analysis signal is generally more noisy as it seems this system is harder to control by the control architecture in our model. The speed of walking is also slower (we relaxed the speed constraint before launching the optimization process).
 
 \begin{figure}[h!]
     \centering
@@ -84,28 +84,43 @@ We reduce the maximum force that can be produced by the plantarflexor muscles (\
     \label{atrophic_gait}
 \end{figure}
 
+The resulting gait displays a \textit{heel-walking} behavior as is clearly visible on the rendering of figure \ref{atrophic_render}. As the body cannot produce any torque on the heel the lays flat on the ground for the entire support phase.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{screens/heel_walk.jpg}
     \caption{Rendering of the optimization solution produced for the PF muscular atrophy model.}
+    \label{atrophic_render}
 \end{figure}
 
 \section{Pathological Gait : Hyperreflexia}
 
+We increase the gain of velocity dependent reflexes for both plantarflexor muscles in the model controller and run the optimization process until we find a stable gait. We clearly see that the principal kinematic adaptation is that the model adopts a \textit{toe-walking} gait. This can be observed in the ankle flexion plot  from the gait analysis (figure \ref{hr_gait}) which adopts a constant negative value (the heel is almost never flat on the ground) or in the renders (figure \ref{hr_render}) that clearly show that the body supports itself on the toe alone for the entire support phase. The knee flexion amplitude is also increased. The pelvic tilt also displays a higher average value than for both previous gaits (which actually makes it more in line with average, healthy human walking).
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{screens/hyperreflexia_gait.png}
-    \caption{Gait parameters as observed in the SCONE simulation of a subject with a gait affected by hyperreflexia.}
+    \caption{Gait parameters as observed in the SCONE simulation of a subject with a gait affected by hyperreflexia. We observe that the signal is more noisy, and has a higher amplitude on every variable. }
+    \label{hr_gait}
 \end{figure}
+
+Furthermore we observe that the gait signal is significantly more noisy on all variables compared with both the healthy and muscle atrophic gait. From a control theory perspective it actually quite unsurprising that a stronger feedback leads to a higher instability in a closed loop dynamical system.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{screens/toe_walk_hr.jpg}
     \caption{Rendering of the optimization solution produced for the hyperreflexia model.}
+    \label{hr_render}
 \end{figure}
 
-\section{Pathological Gait : Heel / Toe Walking}
+\section{Pathological Gait : Toe Walking}
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{screens/toe_walk_gait.png}
+    \caption{Gait parameters as observed in the SCONE simulation of a subject with a gait affected by hyperreflexia. We observe that the signal is more noisy, and has a higher amplitude on every variable. }
+    \label{toe_gait}
+\end{figure}
 
 \end{document}
 
