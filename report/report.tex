@@ -75,7 +75,7 @@ The solution provided by the optimization process (which converges relatively fa
 
 \section{Pathological Gait : Plantarflexor Muscle Atrophy}
 
-We reduce the maximum force that can be produced by the plantarflexor muscles (\textit{gastrocnemius} and \textit{soleus}). The principal kinetic adaptation is (quite obviously) a reduction of the amplitude of plantarflexion as is clearly visible on the ankle figure plot of the gait analysis in figure \ref{atrophic_gait}. A more general observation is that the gait analysis signal is generally more noisy as it seems this system is harder to control by the control architecture in our model. The speed of walking is also slower (we relaxed the speed constraint before launching the optimization process).
+We reduce the maximum force that can be produced by the plantarflexor muscles (\textit{gastrocnemius} and \textit{soleus}). The principal kinetic adaptation is (quite obviously) a reduction of the amplitude of plantarflexion as is clearly visible on the ankle figure plot of the gait analysis in figure \ref{atrophic_gait}. A more general observation is that the gait analysis signal is generally more irregular as it seems this system is harder to control by the control architecture in our model. The speed of walking is also slower (we relaxed the speed constraint before launching the optimization process).
 
 \begin{figure}[h!]
     \centering
@@ -102,11 +102,11 @@ We increase the gain of velocity dependent reflexes for both plantarflexor muscl
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{screens/hyperreflexia_gait.png}
-    \caption{Gait parameters as observed in the SCONE simulation of a subject with a gait affected by hyperreflexia. We observe that the signal is more noisy, and has a higher amplitude on every variable. }
+    \caption{Gait parameters as observed in the SCONE simulation of a subject with a gait affected by hyperreflexia. We observe that the ground reaction force displays high frequency oscillations, the signal has a higher amplitude on every variable. }
     \label{hr_gait}
 \end{figure}
 
-Furthermore we observe that the gait signal is significantly more noisy on all variables compared with both the healthy and muscle atrophic gait. From a control theory perspective it actually quite unsurprising that a stronger feedback leads to a higher instability in a closed loop dynamical system.
+Furthermore we observe that the gait signal is significantly more irregular (less stable) on all variables compared with both the healthy and muscle atrophic gait. From a control theory perspective it actually quite unsurprising that a stronger feedback leads to a higher instability in a closed loop dynamical system.
 
 \begin{figure}[h!]
     \centering
@@ -115,11 +115,11 @@ Furthermore we observe that the gait signal is significantly more noisy on all v
     \label{hr_render}
 \end{figure}
 
-Perhaps surprisingly, the hyperreflexia model converges to a stable gait about as fast as the healthy model ($\sim 12$ iterations for the hyperreflexia model v.s. $\sim 10$ iterations for the healthy model), but the cost function converges to a higher value ($1.673$ for hyperreflexia compared with $0.797$ for the healthy gait). The fast convergence might be attributed to the highly noisy dynamics that are associated with a higher feedback gain (the optimization algorithm might get out of local minima faster). The higher final cost is probably also attributed to instability (cost function penalizes head movement, falls and high energy use, which are all associated with noisy muscle activation).
+Perhaps surprisingly, the hyperreflexia model converges to a stable gait about as fast as the healthy model ($\sim 12$ iterations for the hyperreflexia model v.s. $\sim 10$ iterations for the healthy model), but the cost function converges to a higher value ($1.673$ for hyperreflexia compared with $0.797$ for the healthy gait). The fast convergence might be attributed to the more irregular dynamics that are associated with a higher feedback gain (the optimization algorithm might get out of local minima faster). The higher final cost is probably also attributed to instability (cost function penalizes head movement, falls and high energy use, which are all associated with high-amplitude, high frequency muscle activation).
 
 \section{Pathological Gait : Toe Walking}
 
-We try to reproduce a pathological gait that displays toe-walking. To get to such a gait we propose an alteration to the OpenSim model to emulate plantarflexor muscle contracture (as proposed by Ong et al. \cite{1}). We implement severe PF contracture by reducing the optimal fiber length of left and right \textit{soleus} an \textit{gastrocnemius} muscles by a factor of $0.7$. After running the optimization process we observe that the solution indeed converges to a toe-walking gait that is quite similar to the one observed when modeling hyperreflexia. The resulting gait is less noisy than the one obtained by modeling hyperreflexia (figure \ref{toe_gait}), but the gait is quite irregular (it differs from one cycle to another). The knee flexion amplitude is also lower than in the hyperreflexia example.
+We try to reproduce a pathological gait that displays toe-walking. To get to such a gait we propose an alteration to the OpenSim model to emulate plantarflexor muscle contracture (as proposed by Ong et al. \cite{1}). We implement severe PF contracture by reducing the optimal fiber length of left and right \textit{soleus} an \textit{gastrocnemius} muscles by a factor of $0.7$. After running the optimization process we observe that the solution indeed converges to a toe-walking gait that is quite similar to the one observed when modeling hyperreflexia. The resulting gait displays less high frequency oscillations than the one obtained by modeling hyperreflexia (figure \ref{toe_gait}), but the gait is quite irregular (it differs from one cycle to another). The knee flexion amplitude is also lower than in the hyperreflexia example.
 
 \begin{figure}[h!]
     \centering
