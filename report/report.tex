@@ -57,7 +57,7 @@
 
 \section{Healthy Gait}
 
-The solution provided by the optimization process (which converges relatively fast) is quite good. The gait appears natural when played as a video but a close examination of the gait parameters (pelvic tilt, hip, knee and ankle flexion as well as ground reaction forces, displayed in figure \ref{healthy_gait}) show that the model gives results slightly off compared to measured data in humans. The curves have the approximate shape of the real-life data but their amplitude and timing is slightly off. Furthermore one observes that the ankle flexion displays a dip in angle at $\sim 25\%$ of the gait cycle that simply doesn't exist in humans. This model seems more useful as a toy-model, to rapidly test out hypotheses rather than as an accurate prediction tool (as is often the case when modeling complex dynamical systems). The render allows for the observation of gait kinematics as displayed in figure \ref{healthy_render}.
+The solution provided by the optimization process (which converges relatively fast) is quite good. The gait appears natural when played as a video but a close examination of the gait parameters (pelvic tilt, hip, knee and ankle flexion as well as ground reaction forces, displayed in figure \ref{healthy_gait}) show that the model gives results slightly off compared to measured data in humans. The curves have the approximate shape of the real-life data but their amplitude and timing is slightly off. Furthermore one observes that the ankle flexion displays a dip in angle at $\sim 25\%$ of the gait cycle that simply doesn't exist in humans. We also observe that the gait is regular (the system reaches some kind of limit cycle). This model seems more useful as a toy-model, to rapidly test out hypotheses rather than as an accurate prediction tool (as is often the case when modeling complex dynamical systems). The render allows for the observation of gait kinematics as displayed in figure \ref{healthy_render}.
 
 \begin{figure}[h!]
     \centering
@@ -75,7 +75,7 @@ The solution provided by the optimization process (which converges relatively fa
 
 \section{Pathological Gait : Plantarflexor Muscle Atrophy}
 
-We reduce the maximum force that can be produced by the plantarflexor muscles (\textit{gastrocnemius} and \textit{soleus}). The principal kinetic adaptation is (quite obviously) a reduction of the amplitude of plantarflexion as is clearly visible on the ankle figure plot of the gait analysis in figure \ref{atrophic_gait}. A more general observation is that the gait analysis signal is generally more irregular as it seems this system is harder to control by the control architecture in our model. The speed of walking is also slower (we relaxed the speed constraint before launching the optimization process).
+We reduce the maximum force that can be produced by the plantarflexor muscles (\textit{gastrocnemius} and \textit{soleus}). The principal kinetic adaptation is (quite obviously) a reduction of the amplitude of plantarflexion as is clearly visible on the ankle figure plot of the gait analysis in figure \ref{atrophic_gait}. A more general observation is that the gait analysis signal is slightly more irregular as it seems this system is harder to control by the control architecture in our model. The speed of walking is also slower (we relaxed the speed constraint before launching the optimization process).
 
 \begin{figure}[h!]
     \centering

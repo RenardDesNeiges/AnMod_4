@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.11)  6 MAY 2021 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.11)  6 MAY 2021 11:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -723,20 +723,29 @@ File: screens/healthy_render.jpg Graphic file (type jpg)
 <use screens/healthy_render.jpg>
 Package pdftex.def Info: screens/healthy_render.jpg  used on input line 71.
 (pdftex.def)             Requested size: 452.9679pt x 108.71275pt.
- [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/healthy_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/healthy_render.jpg>]
-<screens/atrophy_gait.png, id=16, 1637.11626pt x 661.47125pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screens/atrophy_gait.png, id=4, 1637.11626pt x 661.47125pt>
 File: screens/atrophy_gait.png Graphic file (type png)
 <use screens/atrophy_gait.png>
 Package pdftex.def Info: screens/atrophy_gait.png  used on input line 82.
 (pdftex.def)             Requested size: 452.9679pt x 183.02045pt.
-<screens/heel_walk.jpg, id=17, 2509.375pt x 602.25pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screens/heel_walk.jpg, id=5, 2509.375pt x 602.25pt>
 File: screens/heel_walk.jpg Graphic file (type jpg)
 <use screens/heel_walk.jpg>
 Package pdftex.def Info: screens/heel_walk.jpg  used on input line 91.
 (pdftex.def)             Requested size: 452.9679pt x 108.71275pt.
- [2 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/atrophy_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/heel_walk.jpg>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/healthy_gait.png>] [2 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/healthy_render.jpg> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/atrophy_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/heel_walk.jpg>]
 <screens/hyperreflexia_gait.png, id=24, 1736.4875pt x 643.40375pt>
 File: screens/hyperreflexia_gait.png Graphic file (type png)
 <use screens/hyperreflexia_gait.png>
@@ -747,11 +756,10 @@ File: screens/toe_walk_hr.jpg Graphic file (type jpg)
 <use screens/toe_walk_hr.jpg>
 Package pdftex.def Info: screens/toe_walk_hr.jpg  used on input line 113.
 (pdftex.def)             Requested size: 452.9679pt x 108.71275pt.
+ [3 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/hyperreflexia_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_hr.jpg>]
 
+LaTeX Warning: Citation '1' on page 4 undefined on input line 122.
 
-LaTeX Warning: Citation '1' on page 3 undefined on input line 122.
-
-[3 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/hyperreflexia_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_hr.jpg>]
 <screens/toe_walk_gait.png, id=30, 1756.5625pt x 626.34pt>
 File: screens/toe_walk_gait.png Graphic file (type png)
 <use screens/toe_walk_gait.png>
@@ -762,7 +770,7 @@ File: screens/toe_render.jpg Graphic file (type jpg)
 <use screens/toe_render.jpg>
 Package pdftex.def Info: screens/toe_render.jpg  used on input line 135.
 (pdftex.def)             Requested size: 452.9679pt x 108.71275pt.
- [4 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_render.jpg>] [5] (/Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.aux)
+[4 </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_walk_gait.png> </Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/screens/toe_render.jpg>] [5] (/Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -778,13 +786,13 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 Here is how much of TeX's memory you used:
  13433 strings out of 480608
  237128 string characters out of 5903629
- 883317 words of memory out of 5000000
+ 884317 words of memory out of 5000000
  29106 multiletter control sequences out of 15000+600000
  571939 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,45p,1204b,1132s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.pdf (5 pages, 5848894 bytes).
+Output written on /Users/renard/Documents/etudes/EPFLMA2/AnMod/Assignements/4_scone/report/report.pdf (5 pages, 5848949 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
